@@ -48,23 +48,7 @@ class _HomePageState extends State<HomePage> {
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Container(
-                    width: 60,
-                    height: 60,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      gradient: LinearGradient(
-                        colors: [
-                          greenGradient.lightShade,
-                          greenGradient.darkShade,
-                        ],
-                      ),
-                    ),
-                    child: const Icon(
-                      Icons.add,
-                      color: Colors.white,
-                    ),
-                  ),
+                  
                 ],
               ),
             ),
