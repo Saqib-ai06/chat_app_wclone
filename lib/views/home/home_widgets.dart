@@ -2,10 +2,13 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 
-Widget addStoryWidget() {
+Widget addStoryWidget({
+  required double size,
+  required IconData iconData,
+}) {
   return Container(
-    width: 60,
-    height: 60,
+    width: size,
+    height: size,
     decoration: BoxDecoration(
       shape: BoxShape.circle,
       gradient: LinearGradient(
@@ -15,9 +18,22 @@ Widget addStoryWidget() {
         ],
       ),
     ),
-    child: const Icon(
-      Icons.add,
-      color: Colors.white,
+    child: Icon(iconData, color: Colors.white),
+  );
+}
+
+Widget storyWidget({
+  required double size,
+  required String imageUrl,
+}) {
+  return Container(
+    width: size,
+    height: size,
+    decoration: BoxDecoration(
+      shape: BoxShape.circle,
+      image: DecorationImage(
+        image: NetworkImage(imageUrl),
+      ),
     ),
   );
 }
