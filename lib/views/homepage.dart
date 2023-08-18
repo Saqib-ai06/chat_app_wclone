@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                   scrollDirection: Axis.horizontal,
                   children: [
                     addStoryWidget(
-                        size: 60, iconData: Icons.add, text: "New Status"),
+                        size: 60, iconData: Icons.add, text: "Add Status"),
                     const SizedBox(
                       width: 8,
                     ),
